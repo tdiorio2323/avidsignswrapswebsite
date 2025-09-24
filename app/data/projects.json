@@ -1,0 +1,53 @@
+[
+  {
+    "id": "papillon-channel-letters",
+    "title": "Papillon Channel Letters",
+    "category": "Custom Signs",
+    "client": "Papillon Restaurant",
+    "location": "Staten Island, NY",
+    "materials": "Aluminum, LED modules, Acrylic face",
+    "dimensions": "8' x 2.5'",
+    "date": "2024-03-15",
+    "description": "Premium illuminated channel letter signage for upscale dining establishment. Features energy-efficient LED lighting with warm white color temperature.",
+    "images": [
+      "/projects/papillon-channel-letters/main.jpg",
+      "/projects/papillon-channel-letters/installation.jpg",
+      "/projects/papillon-channel-letters/night-view.jpg"
+    ],
+    "slug": "papillon-channel-letters"
+  },
+  {
+    "id": "cj-scott-sprinter-wrap",
+    "title": "CJ Scott Sprinter Wrap",
+    "category": "Vehicle Wraps",
+    "client": "CJ Scott Contracting",
+    "location": "Brooklyn, NY",
+    "materials": "3M IJ180Cv3 with 8518 Laminate",
+    "dimensions": "Full vehicle wrap",
+    "date": "2024-02-28",
+    "description": "Full Mercedes Sprinter van wrap featuring bold branding and contact information. High-performance vinyl with 7-year warranty.",
+    "images": [
+      "/projects/cj-scott-sprinter-wrap/driver-side.jpg",
+      "/projects/cj-scott-sprinter-wrap/passenger-side.jpg",
+      "/projects/cj-scott-sprinter-wrap/rear-doors.jpg"
+    ],
+    "slug": "cj-scott-sprinter-wrap"
+  },
+  {
+    "id": "parking-garage-wayfinding",
+    "title": "Parking Garage Wayfinding System",
+    "category": "Wayfinding",
+    "client": "Metro Plaza Shopping Center",
+    "location": "Staten Island, NY",
+    "materials": "Aluminum composite, Reflective vinyl",
+    "dimensions": "Various sizes (24\" x 18\" to 48\" x 24\")",
+    "date": "2024-01-20",
+    "description": "Comprehensive wayfinding signage system for multi-level parking garage. ADA compliant with high-contrast graphics for visibility.",
+    "images": [
+      "/projects/parking-garage-wayfinding/directional-sign.jpg",
+      "/projects/parking-garage-wayfinding/level-markers.jpg",
+      "/projects/parking-garage-wayfinding/entrance-sign.jpg"
+    ],
+    "slug": "parking-garage-wayfinding"
+  }
+]

@@ -1,0 +1,43 @@
+<svg width="300" height="140" viewBox="0 0 300 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define colors for dark background version -->
+    <style>
+      .logo-text { fill: #FFFFFF; }
+      .logo-accent { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <!-- Triangle A shape - white version for dark backgrounds -->
+  <path d="M25 100 L75 25 L125 100 L105 100 L97 82 L53 82 L45 100 Z M63 60 L87 60 L75 42 Z"
+        class="logo-text"
+        fill="#FFFFFF"
+        stroke="none"/>
+
+  <!-- VID text - bold, geometric style -->
+  <g class="logo-text" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <!-- V -->
+    <path d="M130 45 L142 45 L158 85 L174 45 L186 45 L162 105 L154 105 Z"/>
+    <!-- I -->
+    <rect x="194" y="45" width="8" height="60"/>
+    <!-- D -->
+    <path d="M210 45 L235 45 C245 45 252 52 252 62 L252 88 C252 98 245 105 235 105 L210 105 Z M218 53 L218 97 L235 97 C240 97 244 93 244 88 L244 62 C244 57 240 53 235 53 Z"/>
+  </g>
+
+  <!-- SIGNS • GRAPHICS text -->
+  <g class="logo-text" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5px">
+    <text x="65" y="125">SIGNS</text>
+    <circle cx="115" cy="120" r="2"/>
+    <text x="125" y="125">GRAPHICS</text>
+  </g>
+
+  <!-- Vehicle Wraps script text -->
+  <text x="45" y="138"
+        class="logo-text"
+        fill="#FFFFFF"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="18"
+        font-style="italic"
+        font-weight="400">
+    Vehicle Wraps
+  </text>
+</svg>

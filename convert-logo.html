@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVID Logo Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .logo-preview {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            background: #f9f9f9;
+        }
+        .dark-bg {
+            background: #2d2d2d;
+        }
+        #downloadBtn {
+            background: #007cba;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        #downloadBtn:hover {
+            background: #005a87;
+        }
+        .instructions {
+            background: #f0f8ff;
+            padding: 15px;
+            border-left: 4px solid #007cba;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>AVID Signs Logo Converter</h1>
+
+    <div class="instructions">
+        <h3>How to use this tool:</h3>
+        <ol>
+            <li>The SVG logos are displayed below</li>
+            <li>Right-click on any logo and select "Save image as..." to save as PNG</li>
+            <li>Or use the download button to get a high-quality PNG</li>
+        </ol>
+    </div>
+
+    <h2>Logo Preview (Light Background)</h2>
+    <div class="logo-preview">
+        <svg width="300" height="140" viewBox="0 0 300 140" xmlns="http://www.w3.org/2000/svg">
+            <!-- Triangle A shape -->
+            <path d="M25 100 L75 25 L125 100 L105 100 L97 82 L53 82 L45 100 Z M63 60 L87 60 L75 42 Z"
+                  fill="#2D2D2D" stroke="none"/>
+
+            <!-- VID text -->
+            <g fill="#2D2D2D" font-family="Arial, Helvetica, sans-serif" font-weight="800">
+                <!-- V -->
+                <path d="M130 45 L142 45 L158 85 L174 45 L186 45 L162 105 L154 105 Z"/>
+                <!-- I -->
+                <rect x="194" y="45" width="8" height="60"/>
+                <!-- D -->
+                <path d="M210 45 L235 45 C245 45 252 52 252 62 L252 88 C252 98 245 105 235 105 L210 105 Z M218 53 L218 97 L235 97 C240 97 244 93 244 88 L244 62 C244 57 240 53 235 53 Z"/>
+            </g>
+
+            <!-- SIGNS • GRAPHICS text -->
+            <g fill="#2D2D2D" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5px">
+                <text x="65" y="125">SIGNS</text>
+                <circle cx="115" cy="120" r="2"/>
+                <text x="125" y="125">GRAPHICS</text>
+            </g>
+
+            <!-- Vehicle Wraps script text -->
+            <text x="45" y="138" fill="#2D2D2D" font-family="Georgia, 'Times New Roman', serif"
+                  font-size="18" font-style="italic" font-weight="400">Vehicle Wraps</text>
+        </svg>
+    </div>
+
+    <h2>Logo Preview (Dark Background)</h2>
+    <div class="logo-preview dark-bg">
+        <svg width="300" height="140" viewBox="0 0 300 140" xmlns="http://www.w3.org/2000/svg">
+            <!-- Triangle A shape -->
+            <path d="M25 100 L75 25 L125 100 L105 100 L97 82 L53 82 L45 100 Z M63 60 L87 60 L75 42 Z"
+                  fill="#FFFFFF" stroke="none"/>
+
+            <!-- VID text -->
+            <g fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-weight="800">
+                <!-- V -->
+                <path d="M130 45 L142 45 L158 85 L174 45 L186 45 L162 105 L154 105 Z"/>
+                <!-- I -->
+                <rect x="194" y="45" width="8" height="60"/>
+                <!-- D -->
+                <path d="M210 45 L235 45 C245 45 252 52 252 62 L252 88 C252 98 245 105 235 105 L210 105 Z M218 53 L218 97 L235 97 C240 97 244 93 244 88 L244 62 C244 57 240 53 235 53 Z"/>
+            </g>
+
+            <!-- SIGNS • GRAPHICS text -->
+            <g fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5px">
+                <text x="65" y="125">SIGNS</text>
+                <circle cx="115" cy="120" r="2"/>
+                <text x="125" y="125">GRAPHICS</text>
+            </g>
+
+            <!-- Vehicle Wraps script text -->
+            <text x="45" y="138" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif"
+                  font-size="18" font-style="italic" font-weight="400">Vehicle Wraps</text>
+        </svg>
+    </div>
+
+    <button id="downloadBtn" onclick="convertToPNG()">Download as High-Quality PNG</button>
+
+    <div class="instructions">
+        <h3>Alternative Methods to Convert PDF to PNG:</h3>
+        <p><strong>Method 1 - Online Tools:</strong></p>
+        <ul>
+            <li>Visit <a href="https://pdf2png.com" target="_blank">pdf2png.com</a></li>
+            <li>Upload your PDF file at <code>/Users/tylerdiorio/avidsignswrapswebsite/public/logo.pdf</code></li>
+            <li>Download the converted PNG</li>
+        </ul>
+
+        <p><strong>Method 2 - macOS Preview:</strong></p>
+        <ul>
+            <li>Open the PDF in Preview app</li>
+            <li>Go to File → Export As...</li>
+            <li>Choose PNG format</li>
+            <li>Set resolution to 300 DPI for high quality</li>
+        </ul>
+
+        <p><strong>Method 3 - Command Line (if you have ImageMagick):</strong></p>
+        <code>convert -density 300 logo.pdf -resize 200x -quality 100 logo.png</code>
+    </div>
+
+    <script>
+        function convertToPNG() {
+            // Get the SVG element
+            const svg = document.querySelector('svg');
+            const svgData = new XMLSerializer().serializeToString(svg);
+
+            // Create a canvas
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Set canvas size for high quality (2x for retina)
+            canvas.width = 600; // 2x the SVG width
+            canvas.height = 280; // 2x the SVG height
+
+            // Create an image from the SVG
+            const img = new Image();
+            const svgBlob = new Blob([svgData], {type: 'image/svg+xml;charset=utf-8'});
+            const url = URL.createObjectURL(svgBlob);
+
+            img.onload = function() {
+                // Draw the image on canvas
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+                // Convert canvas to PNG and download
+                canvas.toBlob(function(blob) {
+                    const a = document.createElement('a');
+                    const url = URL.createObjectURL(blob);
+                    a.href = url;
+                    a.download = 'avid-logo.png';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                });
+            };
+
+            img.src = url;
+        }
+    </script>
+</body>
+</html>
