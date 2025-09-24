@@ -2,8 +2,6 @@
 
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export interface QuoteFormData {
   name: string;
   email: string;
@@ -31,6 +29,16 @@ export async function submitQuoteRequest(formData: QuoteFormData) {
         error: "Please enter a valid email address."
       };
     }
+
+    // Initialize Resend with API key
+    if (!process.env.RESEND_API_KEY) {
+      return {
+        success: false,
+        error: "Email service is not configured. Please contact us directly."
+      };
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({

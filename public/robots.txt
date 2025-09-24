@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://avidsigns.tdstudiosny.com
+
+# Sitemaps
+Sitemap: https://avidsigns.tdstudiosny.com/sitemap.xml
