@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -12,12 +13,14 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="h-12 w-auto">
-              <span className="text-2xl font-bold text-black">AVID</span>
-              <div className="text-xs text-gray-600 leading-tight">
-                SIGNS • GRAPHICS
-              </div>
-            </div>
+            <Image
+              src="/avid-logo.png"
+              alt="AVID Signs & Graphics - Vehicle Wraps"
+              width={180}
+              height={60}
+              className="h-12 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

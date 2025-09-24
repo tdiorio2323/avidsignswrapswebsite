@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,13 +9,13 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="mb-4">
-              <span className="text-2xl font-bold">AVID</span>
-              <div className="text-sm text-gray-300 leading-tight">
-                SIGNS • GRAPHICS
-              </div>
-              <div className="text-sm text-gray-300 italic mt-1">
-                Vehicle Wraps
-              </div>
+              <Image
+                src="/avid-logo.png"
+                alt="AVID Signs & Graphics - Vehicle Wraps"
+                width={160}
+                height={54}
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
 
             <div className="space-y-2 text-gray-300">
